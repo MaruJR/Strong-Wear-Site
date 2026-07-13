@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f4f7f6;
+}
+/* Header */
+header {
+    background-color: #4294ff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+#logo {
+    border-radius: 50%;
+    object-fit: cover;
+}
+#lista-header {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+#lista-header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+#lista-header a:hover {
+    color: #d1e6ff;
+}
+/* Título Principal */
+#contenedor-título {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2a5eb2;
+    color: white;
+}
+#contenedor-título h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+#contenedor-título h3 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.6;
+}
+#productos-destacados {
+    display: grid;
+    /* Crea columnas automáticas de mínimo 250px */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.producto-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+.producto-card:hover {
+    transform: translateY(-5px);
+}
+.producto-imagen {
+    height: 200px;
+    background-color: #e0e0e0; /* Placeholder para fotos */
+    background-image: linear-gradient(45deg, #eee, #ddd);
+}
+.producto-info {
+    padding: 15px;
+    text-align: center;
+}
+.producto-info h4 {
+    margin-bottom: 8px;
+    color: #333;
+}
+.producto-info p {
+    color: #4294ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px;
+    margin-top: 50px;
+}
+footer #lista-header {
+    justify-content: center;
+}
