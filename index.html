@@ -4,70 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strong Wear</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <img src="https://imgs.search.brave.com/kXKtwcgeyBbkM9QRQW7IfeQBTK3w0AxcjQXSiGVg3hs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Zm10LnNlL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIzLzAyL2xv/Z28tcGxhY2Vob2xk/ZXItaW1hZ2UucG5n" id="logo" width="100px" height="100px">
-        </nav>
-
-        <nav>
-            <ul id="lista-header">
-                <li><a href="index.html">Placeholder 1</a></li>              
-                <li><a href="index.html">Placeholder 2</a></li>              
-                <li><a href="index.html">Placeholder 3</a></li>              
+        <img src="img/strong-wear-logo2.png" id="logo" width="100px" height="40px">
+        <textarea id="barraBusqueda" Placeholder="Introduzca su busqueda..."></textarea>
+        <button id="abrir" class="abrirMenu"><i class="bi bi-list"></i></button>
+        <nav class="navbar-header" id="nav">
+            <button id="cerrar" class="cerrarMenu"><i class="bi bi-x"></i></button>
+            <ul class="navList">
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>              
+                <li><a href="contacto.html">Formulario de Contacto</a></li>              
             </ul>
         </nav>
     </header>
 
     <nav id="contenedor-título">
-    <h1>Strong Wear</h1>
-    <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum quas perspiciatis qui! Magnam odio, dolores, aperiam autem laborum nam necessitatibus molestiae quod laboriosam illum quia consequatur. Minima eum voluptatem libero.</h3>
+        <h1>Strong Wear</h1>
+        <h3>¡Fuerza en movimiento!</h3>
     </nav>
 
     <nav id="productos-destacados">
         <div class="producto-card">
             <div class="producto-imagen">
-                <!-- <a>
-                <img src="remera.deportiva.jpg">
-                </a> -->
+                <img src="img/Camiseta.deportiva.webp">
             </div>
             <div class="producto-info">
-                <h4>Producto 1</h4>
+                <h4>Camisa Deportiva</h4>
                 <p>$29.99</p>
             </div>
         </div>
+
         <div class="producto-card">
-            <div class="producto-imagen"></div>
+            <div class="producto-imagen">
+                <img src="img/Campera.deportiva.webp">
+            </div>
             <div class="producto-info">
-                <h4>Producto 2</h4>
+                <h4>Campera Deportiva</h4>
                 <p>$34.99</p>
             </div>
         </div>
+
         <div class="producto-card">
-            <div class="producto-imagen"></div>
+            <div class="producto-imagen">
+                <img src="img/Chomba.deportiva.webp">
+            </div>
             <div class="producto-info">
-                <h4>Producto 3</h4>
+                <h4>Chomba deportiva</h4>
                 <p>$19.99</p>
             </div>
         </div>
+
         <div class="producto-card">
-            <div class="producto-imagen"></div>
+            <div class="producto-imagen">
+                <img src="img/Conjunto.deportivo.jpg">
+            </div>
             <div class="producto-info">
-                <h4>Producto 4</h4>
-                <p>$49.99</p>
+                <h4>Conjunto deportivo</h4>
+                <p>$59.99</p>
             </div>
         </div>
+
         <div class="producto-card">
-            <div class="producto-imagen"></div>
+            <div class="producto-imagen">
+                <img src="img/Pantalon.negro.deportivo.jpg">
+            </div>
             <div class="producto-info">
-                <h4>Producto 5</h4>
+                <h4>Pantalón deportivo</h4>
                 <p>$24.99</p>
             </div>
         </div>
+        
         <div class="producto-card">
-            <div class="producto-imagen"></div>
+            <div class="producto-imagen">
+                <img src="img/producto6.jpg" alt="Producto 6">
+            </div>
             <div class="producto-info">
                 <h4>Producto 6</h4>
                 <p>$59.99</p>
@@ -76,11 +89,13 @@
     </nav>
 
     <footer>
-        <ul id="lista-header">
+        <ul class="navListFooter">
             <li><a href="">Placeholder 1</a></li>              
             <li><a href="">Placeholder 2</a></li>              
             <li><a href="">Placeholder 3</a></li>              
         </ul>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
